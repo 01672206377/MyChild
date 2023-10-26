@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
+=======
+>>>>>>> 55ea728db675b2ded78aa9415da0a95b62f0469f
     "start": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
@@ -33,8 +36,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+<<<<<<< HEAD
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
+=======
+>>>>>>> 55ea728db675b2ded78aa9415da0a95b62f0469f
     "nodemon": "^3.0.1"
   }
 }
