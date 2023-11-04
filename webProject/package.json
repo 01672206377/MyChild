@@ -1,0 +1,24 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js",
+    "watch":"node-sass --watch src/resources/scss/ --output src/public/css/"
+  },
+  "author": "khan koong",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
