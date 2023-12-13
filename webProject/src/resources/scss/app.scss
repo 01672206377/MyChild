@@ -1,224 +1,121 @@
-.red{
-    border: 1px solid red;
-}
-
-.green{
-    border: 1px solid green;
-}
-
-body{
+@import 'variables';
+*{
+    margin: 0;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-
-    a{
-        text-decoration: none;
-    }
 }
 
-.container{
-    margin: 0;
-}
-
-.header{
-    height: 850px;
-    border-bottom: 1px solid #ccc;
-    .top-nav{
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        padding: 20px 20px 0;
-        .logo{
-            width: 20%;
-            display: flex;
-            flex-direction: row;
-            margin-top: 20px;
-            img{
-                height: 50%;
-                margin-left: 10px;
-            }
-            i{
-                font-size: 28px;
-                opacity: 0.5;
-                margin-top: 5px;
-            }
-        }
-        .intro{
-            width: 60%;
-            display: flex;
-            flex-direction: row;
-
-            .intro-icon{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                padding-top: 20px;
-                .title{
-                    margin: 0;
-                    font-size: 15px;
-                }
-                span{
-                    padding-top: 5px;
-                    font-size: 12px;
-                    display: block;
-
-                }
-            }
-        }
-        .support{
-            width: 20%;
-            padding-top: 25px;
-            i{
-                padding-right: 5px;
-            }
-        }
-    }
-    .image-nav{
-        height: 650px;
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .title-image{
-            font-size: 35px;
-            margin: 30px 0;
-        }
-
-        .btn-search{
-            border-radius: 25px;
-            padding: 10px;
-            background-color: #f7d800;
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            .input-search{
-                width: 100%;
-                border: none;
-                outline: none;
-                background-color: #f7d800;
-                padding-left: 10px;
-            }
-            i{
-
-            }
-        }
-    }
-    .bottom-nav{
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-
-        .bottom-item{
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            justify-content: center;
-            align-items: center;
-            span{
-                display: block;
-                padding-top: 5px;
-            }
-            i{
-                color: #59c1a9;
-            }
-        }
-    }
-}
-
-.popular-specialty, .hospital-and-clinic, .doctors{
-    height: 400px;
-    width: 100%;
+.card-doctor{
     display: flex;
     flex-direction: column;
-    .title-section{
-        width: 100%;
-        height: 100px;
-        padding-top: 10px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        .span-title{
-            width: 20%;
-            display: block;
-            font-size: 20px;
-            font-weight: 600;
+    margin-top: 40px;
+    .card-doctor-item{
+        margin: 0 50px;
+        border: none;
+        width: 220px;
+        .card-img{
+            border-radius: 50%;
+            height: 220px;
+            width: 220px;
         }
-        .btn-view{
-            width: 80%;
-            display: flex;
-            justify-content: flex-end;
-            a{
-                border: 1px solid #ccc;
-                background-color: #ccc;
-                height: fit-content;
-                padding: 10px;
-                &:hover{
-                    border: 1px solid #f7d800;
-                    background-color: #f7d800;
-                }
-                span{
-                    width: 100%;
-                    padding: 5px;
-                    color: #000;
-                    &:hover{
-                        color: #fff;
-                    }
-                }
-
+        .card-content{
+            margin-top: 10px;
+            .card-title{
+                font-size: 25px;
+                font-weight: 400;
             }
-        }
-    }
-
-    .slide{
-        height: 300px;
-        .my-slick-slide{
-            width: 100%;
-            height: 100%;
-            .div-slide{
-                display: flex;
-                flex-direction: column;
-                padding-right: 10px;
-                .image-slide{
-                    height: 200px;
-                    background: url("/images/logo.png") center center no-repeat;
-                    background-size: 325px 200px;
-                }
-                .div-title{
-                    background-color: #f5efef;
-                    span{
-                        display: block;
-                        text-transform: uppercase;
-                        font-size: 20px;
-                        padding: 5px;
-                    }
-                }
+            .card-text{
+                font-size: 16px;
+                color: #626262;
             }
-        }
-        .arrow-left{
-            border: 1px solid #ccc;
-            font-size: 30px;
-            padding: 15px;
-            color: #ccc;
-            position: absolute;
-            bottom: 50%;
-            background-color: white;
-            z-index: 1;
-        }
-        .arrow-right{
-            border: 1px solid #ccc;
-            font-size: 30px;
-            padding: 15px;
-            color: #ccc;
-            position: absolute;
-            bottom: 50%;
-            right: 0;
-            background-color: white;
         }
     }
 }
+
+
+// css navbar
+.nav-header{
+    margin-bottom: 5px;
+    padding-top: 20px ;
+    position: relative;
+    .bg-slider{
+        position: absolute;
+        height: 350px;
+        width: 100%;
+        z-index: -1;
+        background-color: #e3f2fd;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.logo-img{
+    height: 40px;
+}
+// end css navbar
+
+// css slider
+.slider-img{
+    height: 400px;
+    border-radius: 30px;
+}
+// end css slider
+
+
+
+// service view css
+.service-view{
+    margin-top: 50px;
+    .service-list{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        .service-item:first-child{
+            margin-right: 40px;
+        }
+        .service-item a{
+            height: 96px;
+            width: 560px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            line-height: 85px;
+            font-size: 28px;
+            font-weight: 640;
+            background-image: url('/img/bg-service.png');
+            color: #000;
+        }
+    }
+}
+// end service view css
+
+
+// start css card view service
+.card {
+    margin-bottom: 30px;
+}
+.card-show {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+.card-show .card-subtitle {
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #8898aa;
+}
+.table-product.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f3f8fa!important
+}
+.table-product td{
+    border-top: 0px solid #dee2e6 !important;
+    color: #728299!important;
+}
+// end css card view service
+
+// css doctor view
